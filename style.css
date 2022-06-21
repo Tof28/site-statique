@@ -15,19 +15,35 @@ header {
 }
 .navbar {
     position: absolute;
-    margin: 50px;
+    padding: 50px;
     display:flex;
+    align-items: center;
     justify-content: space-between;
     width: 100%;
     box-sizing: border-box;
 }
-.navbar {
+.navbar a {
     color: white;
 }
-.navbar {
+.navbar .logo {
     font-size: 2em;
     font-weight: bold;
 }
+
 .navbar .nav-links ul {
     display: flex;
     }
+
+.navbar .nav-links ul li {
+        margin: 25px;
+}
+
+.navbar .nav-links ul  li.active a {
+    color: red;
+    font-weight: 600;
+}
+@media screen and (max-width: 900px) {
+.nav-links {
+    display: none;
+    }
+}
